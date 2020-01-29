@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebForms-Implicit", "WebForms-Implicit.csproj", "{43757AF6-7762-44AC-A8B7-842C119BE3CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43757AF6-7762-44AC-A8B7-842C119BE3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43757AF6-7762-44AC-A8B7-842C119BE3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43757AF6-7762-44AC-A8B7-842C119BE3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43757AF6-7762-44AC-A8B7-842C119BE3CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9323DDF0-0C34-47A6-BEA4-BF79AE668149}
+	EndGlobalSection
+EndGlobal
