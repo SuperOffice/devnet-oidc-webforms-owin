@@ -51,9 +51,9 @@
 
   <ItemGroup Label="Browser-side packages (versions unchanged, files in Scripts/Content are maintained by hand)">
     <PackageReference Include="AspNet.ScriptManager.bootstrap" Version="3.0.0" />
-    <PackageReference Include="AspNet.ScriptManager.jQuery" Version="1.10.2" />
+    <PackageReference Include="AspNet.ScriptManager.jQuery" Version="3.7.1" />
     <PackageReference Include="bootstrap" Version="3.4.1" />
-    <PackageReference Include="jQuery" Version="3.5.0" />
+    <PackageReference Include="jQuery" Version="3.7.1" />
     <PackageReference Include="Modernizr" Version="2.6.2" />
     <PackageReference Include="Respond" Version="1.2.0" />
   </ItemGroup>
