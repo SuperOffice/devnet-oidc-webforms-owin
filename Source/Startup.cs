@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 using Microsoft.Owin;
 using Microsoft.Owin.Extensions;
 using Owin;
-using System.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OpenIdConnect;
 using System.Linq;
 using System.Security.Claims;
 using IdentityModel.Client;
-using Microsoft.IdentityModel.Protocols;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using SuperOffice.Security.Principal;
 using WebApp.Helpers;
 
@@ -28,7 +28,7 @@ namespace WebApp
                 SlidingExpiration = true
             });
 
-            JwtSecurityTokenHandler.InboundClaimTypeMap.Clear();
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
             app.UseOpenIdConnectAuthentication(new OpenIdConnectAuthenticationOptions
             {
@@ -82,7 +82,7 @@ namespace WebApp
                     },
                     RedirectToIdentityProvider = n =>
                     {
-                        if (n.ProtocolMessage.RequestType == OpenIdConnectRequestType.LogoutRequest)
+                        if (n.ProtocolMessage.RequestType == OpenIdConnectRequestType.Logout)
                         {
                             var id_token = n.OwinContext.Authentication.User.FindFirst("id_token")?.Value;
                             n.ProtocolMessage.IdTokenHint = id_token;
